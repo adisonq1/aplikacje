@@ -3,18 +3,16 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Pseudoelement after</title>
     <style>
-        input:focus{
-        background-color: yellow;
-        }
-    </style>
+    p::before {
+ 	  content: " - Remember this";
+	   }
+</style>
 </head>
 <body>
-	<h1>Using :focus</h1>
-    <form>
-        first name: <input type="text" name="fname"><br>
-    </form>
-</body>
+<h1>Pseudoelement <b>::after</b> formatuje treść za selektorami</h1>
+<p>My name is Donald.</p>
+<p>I live in Duckburg.</p>
+</body>              
 </html>
-
